@@ -1,0 +1,259 @@
+@font-face {
+    font-family: "LiberationSans";
+    src: url("./fonts/LiberationSans-Regular-webfont.ttf") format("truetype"),
+         url("./fonts/LiberationSans-Bold-webfont.ttf") format("truetype");
+         
+   }
+
+body {
+    font-family: "LiberationSans", sans-serif;
+}
+
+
+header {
+    background-image: url(./images/background.jpg);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+#welcome {
+    text-align: end;
+}
+
+h1, #welcome {
+    font-size: 1.4rem;
+}
+
+#logotype span {
+    color: #EA9F06;
+}
+
+#txt-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #3F3F3F;
+}
+#txt-top ul{
+    min-width: 400px;
+    gap: 40px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    display: flex;
+
+}
+
+main {
+    background-color: #1C1C1C;
+}
+
+#top-img {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#top-img img {
+    max-width: 1060px; 
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#catalogue {
+    display: flex;
+    align-items: center;
+    flex-direction: column;  
+}
+
+#articles {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F3F3F3;
+    max-width: 950px;
+    position: relative;
+    gap: 30px;
+    padding: 40px 50px 100px 50px;
+}
+
+.produits {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.image-promo {
+    position: relative;
+    display: flex;
+    flex: 1; 
+}
+
+.image-promo img {
+    display: flex;
+    flex: 1; 
+}
+
+h2 {
+    background-color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.btn-prix {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    width: 170px;
+    height: 35px;
+    font-size: 1rem;
+    /* background-color: #2A2A2A; */
+    background: linear-gradient( rgba(53,53,53,1), rgba(29,29,29,1));
+    color: #fff;
+    border: none;
+}
+
+.prix-de-base {
+    text-decoration: line-through;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3D3D3D;
+}
+
+.prix-actuel {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #EA9F06;
+}
+
+.promo {
+    position: absolute;
+    top: 10px;
+    right: -25px;
+    border-radius: 10px;
+    width: 105px;
+    padding: 10px 0px;
+    color: #EA9F06;
+    background-color: #292929;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+#infos {
+    position: absolute;
+    bottom: -25px;
+    left: 30%;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;   
+}
+
+#infos ul{
+    gap: 10px;
+    font-size: 0.8rem;
+    color: #6E6E6E;
+}
+
+.rond-gris {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #D2D2D2;
+}
+
+#infos ul {
+    display: flex;
+    justify-content: space-around;
+ 
+}
+
+footer {
+    background-color: #373737;
+}
+
+#rubrique {
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+.bloc {
+    text-align: center;
+    font-size: 0.7rem;
+    margin: 50px;
+}
+
+#medias {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin: 30px 0;
+}
+
+#copyright  {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#bande-foncee{
+    height: 30px;
+    background-color: #212121;
+}
+
+/*****************************************MEDIA QUERIES********************************/
+
+@media screen and (max-width: 800px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #logotype {
+        text-align: center;
+    }
+    
+    #welcome {
+        text-align: left;
+        margin-bottom: 35px;
+        margin-top: 50px;
+    }
+
+    #txt-top ul {
+        justify-content:flex-start;
+    }
+
+    #infos {
+        width: 500px; /************************/
+    }
+
+    #rubrique {
+        flex-wrap: wrap;
+        flex:1;
+    }
+
+    .bloc {
+        min-width: 200px;
+        max-width: 330px;
+        flex: 1;
+    }
+
+
+
+}
+
